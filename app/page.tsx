@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import {useTranslations} from 'next-intl';
+import Hero from "@/app/components/hero/Hero";
 const properties = [
   {
     title: "ویلا ساحلی",
@@ -47,10 +49,12 @@ const properties = [
     description: "موقعیت عالی",
     price: "۷ میلیارد تومان",
     image: "/images/Villa2.jpg",
+  
   },
 ];
 
 export default function Home() {
+  const t = useTranslations('hero');
   return (
   <main
   style={{
