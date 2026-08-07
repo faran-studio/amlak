@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import {useTranslations} from 'next-intl';
 import Hero from "@/app/components/hero/Hero";
 const properties = [
   {
@@ -54,7 +53,6 @@ const properties = [
 ];
 
 export default function Home() {
-  const t = useTranslations('hero');
   return (
   <main
   style={{
@@ -358,70 +356,7 @@ export default function Home() {
     </div>
   </div>
 </div>
-<section
-  style={{
-    background: "#f4efe8",
-    textAlign: "center",
-    padding: "120px 40px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    maxWidth: "1400px",
-    margin: "100px auto",
-    borderRadius: "30px",
-    overflow: "hidden",
-  }}
->
-  <p
-    style={{
-      letterSpacing: "5px",
-      color: "#b89b6a",
-      fontSize: "13px",
-      marginBottom: "25px",
-    }}
-  >
-    WELCOME TO NOOR REAL ESTATE
-  </p>
-
-  <h2
-    style={{
-      fontSize: "58px",
-      fontWeight: "300",
-      color: "#1f2937",
-      fontFamily: "Georgia, serif",
-      lineHeight: "1.3",
-      marginBottom: "25px",
-      textAlign: "center",
-      transform: "translatex(-10px)",
-    }}
-  >
-    Discover Luxury Living <br />
-    Along The Caspian Coast
-  </h2>
-
-  <div
-    style={{
-      width: "80px",
-      height: "2px",
-      background: "#d4af37",
-      margin: "0 auto 30px auto",
-    }}
-  />
-
-  <p
-    style={{
-      maxWidth: "850px",
-      margin: "0 auto",
-      fontSize: "18px",
-      lineHeight: "2",
-      color: "#6b7280",
-    }}
-  >
-    Experience a curated collection of villas, apartments and
-    exceptional coastal properties where elegance, comfort and
-    investment potential come together in Northern Iran.
-  </p>
-</section>
+<Hero />
 
 <section
   style={{
