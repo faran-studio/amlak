@@ -1,25 +1,6 @@
 import Image from "next/image";
-
-const properties = [
-  {
-    title: "ویلا ۳۰۰ متری",
-    location: "نوشهر - شهرک برند",
-    price: "۲۵ میلیارد تومان",
-    image: "/images/Villa.jpg",
-  },
-  {
-    title: "آپارتمان ۱۵۰ متری",
-    location: "تهران - سعادت آباد",
-    price: "۱۲ میلیارد تومان",
-    image: "/images/Villa.jpg",
-  },
-  {
-    title: "زمین ۵۰۰ متری",
-    location: "چمستان",
-    price: "۸ میلیارد تومان",
-    image: "/images/Villa.jpg",
-  },
-];
+import { properties } from "@/app/data/properties";
+import PropertyCard from "@/app/components/property/PropertyCard";
 
 export default function PropertiesPage() {
   return (
@@ -45,55 +26,14 @@ export default function PropertiesPage() {
         }}
       >
         {properties.map((property, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "20px",
-              width: "320px",
-              padding: "15px",
-              backgroundColor: "white",
-            }}
-          >
-            <Image
-              src={property.image}
-              alt={property.title}
-              width={300}
-              height={220}
-              style={{
-                borderRadius: "15px",
-                width: "100%",
-                height: "220px",
-                objectFit: "cover",
-              }}
-            />
-
-            <h3>{property.title}</h3>
-
-            <p>{property.location}</p>
-
-            <p
-              style={{
-                color: "#2563eb",
-                fontWeight: "bold",
-              }}
-            >
-              قیمت: {property.price}
-            </p>
-
-            <button
-              style={{
-                padding: "10px 20px",
-                border: "none",
-                borderRadius: "10px",
-                backgroundColor: "#2563eb",
-                color: "white",
-                cursor: "pointer",
-              }}
-            >
-              مشاهده جزئیات
-            </button>
-          </div>
+        <PropertyCard
+        key={index}
+    title={property.title}
+    description={property.description}
+    location={property.location}
+    price={property.price}
+    image={property.image}
+/>  
         ))}
       </div>
     </main>

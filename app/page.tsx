@@ -3,6 +3,7 @@ import Link from "next/link";
 import Hero from "@/app/components/hero/Hero";
 import Navigation from "@/app/components/navigation/Navigation";
 import { properties } from "@/app/data/properties";
+import PropertyCard from "@/app/components/property/PropertyCard";
 
 export default function Home() {
   return (
