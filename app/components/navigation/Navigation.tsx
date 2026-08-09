@@ -1,4 +1,11 @@
+
+"use client";
+
+import { useLanguage } from "../../context/LanguageContext";
+
 export default function Navigation() {
+  const { language,setLanguage,  t } = useLanguage();
+
   return (
  
       <nav
@@ -69,19 +76,21 @@ export default function Navigation() {
 
           }}
         >
-          <button
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              fontSize: "15px",
-              color: "#f8fafc",
-              padding: "0",
-              transition: "0.3s ease",
-            }}
-          >
-            🌐
-          </button>
+         <button
+  onClick={() => setLanguage(language === "en" ? "fa" : "en")}
+  style={{
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    fontSize: "15px",
+    color: "#f8fafc",
+    padding: "0",
+    transition: "0.3s ease",
+  }}
+  aria-label="Change language"
+>
+  🌐
+</button> 
 
           <a
             href="#"
@@ -93,7 +102,7 @@ export default function Navigation() {
               letterSpacing: "2px",
             }}
           >
-            Home
+           {t.nav.home}
           </a>
 
           <a
@@ -106,7 +115,7 @@ export default function Navigation() {
             }}
           >
 
-            Properties
+           {t.nav.properties}
           </a>
 
           <a
@@ -117,7 +126,7 @@ export default function Navigation() {
               letterSpacing: "2px",
             }}
           >
-            About
+            {t.nav.about}
           </a>
 
           <a
@@ -128,7 +137,7 @@ export default function Navigation() {
               letterSpacing: "2px",
             }}
           >
-            Contact
+            {t.nav.contact}
           </a>
         </div>
       </nav> 

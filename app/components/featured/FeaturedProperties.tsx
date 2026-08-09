@@ -1,8 +1,13 @@
+
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { properties } from "@/app/data/properties";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 export default function FeaturedProperties() {
+ const { t, isPersian } = useLanguage(); 
   return (
  <div
         style={{
@@ -25,7 +30,7 @@ export default function FeaturedProperties() {
               marginBottom: "15px",
             }}
           >
-            FEATURED PROPERTIES
+            {t.featured.label}
           </p>
 
           <h2
@@ -37,7 +42,7 @@ export default function FeaturedProperties() {
               marginBottom: "20px",
             }}
           >
-            Discover Exceptional Opportunities
+            {t.featured.title}
           </h2>
 
           <div
@@ -91,7 +96,7 @@ export default function FeaturedProperties() {
                     marginTop: "18px",
                   }}
                 >
-                  <Link href={`/property/${index + 1}`}>
+                  <Link href={`/property/${property.id}`}>
                     <span
                       style={{
                         color: "#d4af37",
@@ -105,7 +110,7 @@ export default function FeaturedProperties() {
                         letterSpacing: "0.5px",
                       }}
                     >
-                      View Details
+                    {t.featured.button}
                     </span>
                   </Link>
                 </div>

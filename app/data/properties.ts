@@ -1,50 +1,39 @@
+
 export const properties = [
   {
-    title: "ویلا ساحلی",
-    location: "نوشهر",
-    description: "ویوی دریا",
-    price: "۲۵ میلیارد تومان",
-    image: "/images/apartment1.jpg",
-  },
-
-  {
-    title: "ویلا جنگلی",
-    location: "نوشهر",
-    description: "چشم‌انداز جنگل",
-    price: "۲۸ میلیارد تومان",
-    image: "/images/land1.jpg",
-  },
-
-  {
-    title: "آپارتمان لوکس",
-    location: "رشت",
-    description: "دسترسی عالی",
-    price: "۱۲ میلیارد تومان",
+    id: "1",
+    title: "Villa I",
+    type: "Villa",
     image: "/images/villa1.jpg",
   },
-
   {
-    title: "آپارتمان نوساز",
-    location: "رشت",
-    description: "نورگیر و مدرن",
-    price: "۱۰ میلیارد تومان",
+    id: "2",
+    title: "Villa II",
+    type: "Villa",
+    image: "/images/villa2.jpg",
+  },
+  {
+    id: "3",
+    title: "Apartment I",
+    type: "Apartment",
+    image: "/images/apartment1.jpg",
+  },
+  {
+    id: "4",
+    title: "Apartment II",
+    type: "Apartment",
     image: "/images/apartment2.jpg",
   },
-
   {
-    title: "زمین سرمایه‌گذاری",
-    location: "نوشهر",
-    description: "مناسب ساخت ویلا",
-    price: "۸ میلیارد تومان",
-    image: "/images/land2.jpg",
+    id: "5",
+    title: "Land I",
+    type: "Land",
+    image: "/images/land1.jpg",
   },
-
   {
-    title: "زمین مسکونی",
-    location: "رشت",
-    description: "موقعیت عالی",
-    price: "۷ میلیارد تومان",
-    image: "/images/Villa2.jpg",
-
+    id: "6",
+    title: "Land II",
+    type: "Land",
+    image: "/images/land2.jpg",
   },
 ];

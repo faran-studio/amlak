@@ -1,6 +1,27 @@
+
 {
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About",
+    "contact": "Contact"
+  },
   "hero": {
-    "title": "Luxury Living",
-    "subtitle": "A Home For Peace"
+    "welcome": "WELCOME TO NOOR REAL ESTATE",
+    "titleLine1": "Discover Luxury Living",
+    "titleLine2": "Along The Caspian Coast",
+    "description": "Experience a curated collection of villas, apartments and exceptional coastal properties where elegance, comfort and investment potential come together in Northern Iran."
+  },
+  "exclusive": {
+    "label": "Exclusive Living",
+    "titleLine1": "Timeless Luxury",
+    "titleLine2": "By The Sea",
+    "description": "Discover exceptional residences where modern elegance meets breathtaking coastal views. Every property is carefully selected to offer privacy, comfort and a refined lifestyle.",
+    "button": "Discover More"
+  },
+  "featured": {
+    "label": "FEATURED PROPERTIES",
+    "title": "Discover Exceptional Opportunities",
+    "button": "View Details"
   }
 }
