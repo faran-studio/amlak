@@ -1,12 +1,15 @@
-
+"use client";
 import Hero from "@/app/components/hero/Hero";
 import Navigation from "@/app/components/navigation/Navigation";
 import ExclusiveLiving from "@/app/components/exclusive/ExclusiveLiving";
 import FeaturedProperties from "@/app/components/featured/FeaturedProperties";
 import About from "@/app/components/about/About";
 import Footer from "@/app/components/footer/Footer";
+import { useLanguage } from "./context/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <main
       style={{
@@ -77,7 +80,7 @@ export default function Home() {
               marginBottom: "12px",
             }}
           >
-            NOOR REAL ESTATE
+            {t.videoHero.brand}
           </div>
 
           <h1
@@ -89,7 +92,7 @@ export default function Home() {
               fontFamily: "Georgia, serif",
             }}
           >
-            Find Your Dream Property
+            {t.videoHero.title}
           </h1>
 
           <div
@@ -108,7 +111,7 @@ export default function Home() {
               fontWeight: "300",
             }}
           >
-            Luxury villas, apartments and land in Northern Iran
+            {t.videoHero.description}
           </p>
         </div>
 
@@ -136,7 +139,7 @@ export default function Home() {
             }}
           >
             <input
-              placeholder="Location"
+              placeholder={t.search.location}
               style={{
                 flex: 1,
                 border: "none",
@@ -147,7 +150,7 @@ export default function Home() {
             />
 
             <input
-              placeholder="Property Type"
+              placeholder={t.search.propertyType}
               style={{
                 flex: 1,
                 border: "none",
@@ -176,7 +179,7 @@ export default function Home() {
 
               }}
             >
-              Search
+             {t.search.button} 
             </button>
           </div>
         </div>

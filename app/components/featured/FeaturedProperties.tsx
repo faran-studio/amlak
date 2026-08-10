@@ -10,6 +10,7 @@ export default function FeaturedProperties() {
  const { t, isPersian } = useLanguage(); 
   return (
  <div
+ id="properties"
         style={{
           background: "#ffffff",
           padding: "25px 40px 50px 40px",

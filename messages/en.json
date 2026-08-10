@@ -6,6 +6,11 @@
     "about": "About",
     "contact": "Contact"
   },
+  "videoHero": {
+  "brand": "NOOR REAL ESTATE",
+  "title": "Find Your Dream Property",
+  "description": "Luxury villas, apartments and land in Northern Iran"
+},
   "hero": {
     "welcome": "WELCOME TO NOOR REAL ESTATE",
     "titleLine1": "Discover Luxury Living",
@@ -23,5 +28,31 @@
     "label": "FEATURED PROPERTIES",
     "title": "Discover Exceptional Opportunities",
     "button": "View Details"
-  }
+  },
+  "about": {
+  "label": "ABOUT US",
+  "titleLine1": "Building Trust Through",
+  "titleLine2": "Exceptional Real Estate",
+  "imageAlt": "About Noor Real Estate",
+  "paragraph1": "In the world of real estate, trust is the most valuable asset.",
+  "paragraph2": "Our mission is to provide transparent, professional and reliable services, helping our clients make confident decisions when buying, selling or investing in property.",
+  "paragraph3": "We believe that a successful transaction does not end with signing a contract; it marks the beginning of a valuable and long-term relationship.",
+  "highlight": "Your trust is our greatest asset."
+  },
+
+  "search": {
+  "location": "Location",
+  "propertyType": "Property Type",
+  "button": "Search"
+},
+
+"footer": {
+  "home": "Home",
+  "properties": "Properties",
+  "services": "Services",
+  "about": "About Us",
+  "contact": "Contact",
+  "description": "We connect exceptional properties with exceptional people along the Caspian Coast.",
+  "copyright": "© 2025 Noor Real Estate. All Rights Reserved."
+}
 }
