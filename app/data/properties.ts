@@ -17,7 +17,8 @@
     parking: 2,
     distanceToSea: "۳۵۰ متر",
     distanceToSeaEn: "350 m",
-    price: "€485,000",
+    price: "۴۸۵٬۰۰۰ یورو",
+priceEn: "€485,000",
     description:
       "ویلایی لوکس با معماری معاصر، فضای خصوصی در محوطه و دسترسی آسان به ساحل دریای کاسپین؛ مناسب برای زندگی آرام و سطح بالا.",
     descriptionEn:
@@ -42,7 +43,8 @@
     parking: 0,
     distanceToSea: "۷۰۰ متر",
     distanceToSeaEn: "700 m",
-    price: "€320,000",
+    price: "۳۲۰٬۰۰۰ یورو",
+priceEn: "€320,000",
     description:
       "قطعه زمینی با موقعیت مناسب در نزدیکی ساحل کاسپین، مناسب برای ساخت ویلای خصوصی یا یک پروژه مسکونی لوکس.",
     descriptionEn:
@@ -69,7 +71,8 @@
     floorEn: "5th Floor",
     view: "دریای کاسپین",
     viewEn: "Caspian Sea",
-    price: "€245,000",
+    price: "۲۴۵٬۰۰۰ یورو",
+priceEn: "€245,000",
     description:
       "آپارتمانی شیک با فضای نشیمن وسیع و چشم‌انداز زیبای ساحلی؛ مناسب برای سکونت و سرمایه‌گذاری.",
     descriptionEn:
@@ -94,7 +97,8 @@
     parking: 2,
     distanceToSea: "—",
     distanceToSeaEn: "—",
-    price: "€395,000",
+    price: "۳۹۵٬۰۰۰ یورو",
+priceEn: "€395,000",
     description:
       "ویلایی خصوصی در میان طبیعت زیبای شمال ایران، با طراحی مناسب برای آرامش، خلوت و زندگی دور از هیاهو.",
     descriptionEn:
@@ -119,7 +123,8 @@
     parking: 0,
     distanceToSea: "۲٫۵ کیلومتر",
     distanceToSeaEn: "2.5 km",
-    price: "€275,000",
+    price: "۲۷۵٬۰۰۰ یورو",
+priceEn: "€275,000",
     description:
       "قطعه زمینی وسیع در میان طبیعت سرسبز شمال ایران، با فضای خصوصی، چشم‌انداز طبیعی و پتانسیل مناسب برای سرمایه‌گذاری بلندمدت.",
     descriptionEn:
@@ -146,9 +151,12 @@
     floorEn: "3rd Floor",
     view: "باغ و کوهستان",
     viewEn: "Garden & Mountains",
-    price: "€185,000",
+    price: "۱۸۵٬۰۰۰ یورو",
+priceEn: "€185,000",
     description:
       "اقامتگاهی مدرن و راحت با چیدمان کاربردی، فضای آرام و دسترسی مناسب به امکانات ساحلی.",
+     descriptionEn:
+  "A modern and comfortable residence with a practical layout, a peaceful atmosphere and convenient access to coastal amenities.", 
     
   },
 ];

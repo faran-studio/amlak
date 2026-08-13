@@ -1,6 +1,6 @@
-
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "../../context/LanguageContext";
 
 export default function Footer() {
@@ -39,16 +39,39 @@ export default function Footer() {
         REAL ESTATE
       </p>
 
-      <div>
-        {t.footer.home}
-        {" "}
-        {t.footer.properties}
-        {" "}
-        {t.footer.services}
-        {" "}
-        {t.footer.about}
-        {" "}
-        {t.footer.contact}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "30px",
+          flexWrap: "wrap",
+          marginBottom: "35px",
+        }}
+      >
+        <Link href="/" style={{ color: "#fff", textDecoration: "none" }}>
+          {t.footer.home}
+        </Link>
+
+        <Link
+          href="/properties"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {t.footer.properties}
+        </Link>
+
+        <Link
+          href="/about"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {t.footer.about}
+        </Link>
+
+        <Link
+          href="/contact"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          {t.footer.contact}
+        </Link>
       </div>
 
       <p
@@ -127,7 +150,7 @@ export default function Footer() {
           style={{
             display: "flex",
             justifyContent: "center",
-            gap: "85px",
+            gap: "35px",
             flexWrap: "wrap",
             fontSize: "13px",
             letterSpacing: "3px",
@@ -135,11 +158,32 @@ export default function Footer() {
             color: "#d1d5db",
           }}
         >
-          <span>{t.footer.home}</span>
-          <span>{t.footer.properties}</span>
-          <span>{t.footer.services}</span>
-          <span>{t.footer.about}</span>
-          <span>{t.footer.contact}</span>
+          <Link
+            href="/"
+            style={{ color: "#d1d5db", textDecoration: "none" }}
+          >
+            {t.footer.home}
+          </Link>
+
+          <Link
+            href="/properties"
+            style={{ color: "#d1d5db", textDecoration: "none" }}
+          >
+            {t.footer.properties}
+          </Link>
+
+          <Link
+            href="/about"
+            style={{ color: "#d1d5db", textDecoration: "none" }}
+          >
+            {t.footer.about}
+          </Link>
+ <Link
+            href="/contact"
+            style={{ color: "#d1d5db", textDecoration: "none" }}
+          >
+            {t.footer.contact}
+          </Link>
         </div>
 
         <div

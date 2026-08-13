@@ -1,19 +1,15 @@
-export default function ContactPage() {
+﻿import About from "../components/about/About";
+
+export default function AboutPage() {
   return (
     <main
       style={{
-        textAlign: "center",
-        padding: "50px",
-        direction: "rtl",
+        maxWidth: "1200px",
+        margin: "0 auto",
+        padding: "120px 40px",
       }}
     >
-      <h1>تماس با ما</h1>
-
-      <p>شماره تماس:</p>
-
-      <h2>09192509646</h2>
-
-      <p>واتساپ و تماس مستقیم</p>
+      <About />
     </main>
   );
 }
