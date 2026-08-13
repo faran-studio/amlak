@@ -150,15 +150,20 @@ export default function PropertyDetails() {
             {title}
           </h1>
 
-          <p
-            style={{
-              color: "#777",
-              fontSize: "16px",
-              margin: 0,
-            }}
-          >
-            📍 {location}
-          </p>
+         <a
+  href={property.mapsUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    color: "#777",
+    fontSize: "16px",
+    margin: 0,
+    textDecoration: "none",
+    cursor: "pointer",
+  }}
+>
+  📍 {location}
+</a> 
  <div
             style={{
               width: "80px",
@@ -198,7 +203,7 @@ export default function PropertyDetails() {
               fontWeight: "400",
             }}
           >
-            {property.price}
+            {isPersian ? property.price : property.priceEn}
           </strong>
         </div>
 

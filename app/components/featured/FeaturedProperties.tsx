@@ -72,7 +72,7 @@ export default function FeaturedProperties() {
           >
             {properties.map((property, index) => (
               <div
-                key={index}
+              key={property.id}  
                 style={{
                   borderRadius: "24px",
                   overflow: "hidden",

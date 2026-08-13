@@ -149,20 +149,23 @@ export default function ExclusiveLiving() {
             {t.exclusive.description}
           </p>
 
-          <button
-            style={{
-              background: "#d4af37",
-              color: "#fff",
-              border: "none",
-              padding: "16px 34px",
-              borderRadius: "10px",
-              cursor: "pointer",
-              fontSize: "15px",
-              fontWeight: "600",
-            }}
-          >
-            {t.exclusive.button}
-          </button>
+          <a
+  href="#properties"
+  style={{
+    display: "inline-block",
+    background: "#d4af37",
+    color: "#fff",
+    textDecoration: "none",
+    border: "none",
+    padding: "16px 34px",
+    borderRadius: "10px",
+    cursor: "pointer",
+    fontSize: "15px",
+    fontWeight: "600",
+  }}
+>
+  {t.exclusive.button}
+</a>
         </div>
       </div>
     </section>

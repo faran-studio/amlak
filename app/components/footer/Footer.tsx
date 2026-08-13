@@ -1,7 +1,17 @@
-"use client";
+
+ "use client";
 
 import Link from "next/link";
 import { useLanguage } from "../../context/LanguageContext";
+
+const contactInfo = {
+  phone: "+989121234567",
+  email: "info@noor-realestate.com",
+  whatsapp: "989121234567",
+  instagram: "https://instagram.com/",
+  telegram: "https://t.me/",
+  maps: "https://maps.google.com/",
+};
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -39,40 +49,6 @@ export default function Footer() {
         REAL ESTATE
       </p>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "30px",
-          flexWrap: "wrap",
-          marginBottom: "35px",
-        }}
-      >
-        <Link href="/" style={{ color: "#fff", textDecoration: "none" }}>
-          {t.footer.home}
-        </Link>
-
-        <Link
-          href="/properties"
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {t.footer.properties}
-        </Link>
-
-        <Link
-          href="/about"
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {t.footer.about}
-        </Link>
-
-        <Link
-          href="/contact"
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          {t.footer.contact}
-        </Link>
-      </div>
 
       <p
         style={{
@@ -104,33 +80,67 @@ export default function Footer() {
           marginBottom: "35px",
         }}
       >
-        <span>📞 +98 912 123 4567</span>
-        <span>✉️ info@noor-realestate.com</span>
-        <span>📍 Caspian Coast, Iran</span>
+        <a
+          href={`tel:${contactInfo.phone}`}
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          📞 +98 912 123 4567
+        </a>
+
+        <a
+          href={`mailto:${contactInfo.email}`}
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          ✉️ {contactInfo.email}
+        </a>
+
+        <a
+          href={contactInfo.maps}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
+          📍 Caspian Coast, Iran
+        </a>
       </div>
 
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          gap: "80px",
+          gap: "50px",
+          flexWrap: "wrap",
           marginBottom: "35px",
         }}
       >
-        <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+        <a
+          href={contactInfo.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
           Instagram
         </a>
 
-        <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+        <a
+          href={contactInfo.telegram}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
           Telegram
         </a>
 
-        <a href="#" style={{ color: "#fff", textDecoration: "none" }}>
+        <a
+          href={`https://wa.me/${contactInfo.whatsapp}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#fff", textDecoration: "none" }}
+        >
           WhatsApp
         </a>
       </div>
-
-      <div
+       <div
         style={{
           width: "100%",
           maxWidth: "900px",
@@ -158,10 +168,7 @@ export default function Footer() {
             color: "#d1d5db",
           }}
         >
-          <Link
-            href="/"
-            style={{ color: "#d1d5db", textDecoration: "none" }}
-          >
+          <Link href="/" style={{ color: "#d1d5db", textDecoration: "none" }}>
             {t.footer.home}
           </Link>
 
@@ -178,7 +185,8 @@ export default function Footer() {
           >
             {t.footer.about}
           </Link>
- <Link
+
+          <Link
             href="/contact"
             style={{ color: "#d1d5db", textDecoration: "none" }}
           >

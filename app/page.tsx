@@ -1,7 +1,7 @@
 "use client";
 import Hero from "@/app/components/hero/Hero";
-import Navigation from "@/app/components/navigation/Navigation";
 import ExclusiveLiving from "@/app/components/exclusive/ExclusiveLiving";
+import Navigation from "@/app/components/navigation/Navigation";
 import FeaturedProperties from "@/app/components/featured/FeaturedProperties";
 import About from "@/app/components/about/About";
 import Footer from "@/app/components/footer/Footer";
@@ -21,7 +21,8 @@ export default function Home() {
         overflowX: "hidden",
       }}
     >
-<Navigation/>
+
+<Navigation />
 
       <div
         style={{
@@ -161,26 +162,27 @@ export default function Home() {
               }}
             />
 
-            <button
-              style={{
-                background: "#d4af37",
-                color: "#fff",
-                border: "none",
-                height: "100%",
-                padding: "0 45px",
-                fontSize: "16px",
-                cursor: "pointer",
-                fontWeight: "600",
-                borderRadius: "32px 0 0 32px",
-                margin: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-
-              }}
-            >
-             {t.search.button} 
-            </button>
+            <a
+  href="/properties"
+  style={{
+    background: "#d4af37",
+    color: "#fff",
+    border: "none",
+    height: "64px",
+    padding: "0 45px",
+    fontSize: "16px",
+    cursor: "pointer",
+    fontWeight: "600",
+    borderRadius: "32px 0 0 32px",
+    margin: 0,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    textDecoration: "none",
+  }}
+>
+  {t.search.button}
+</a>
           </div>
         </div>
       </div>
