@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
+ inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -23,4 +23,65 @@ body {
   background: white;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+}
+ Get-Content app\globals.css -Encoding UTF8
+.hero-video {
+  animation: heroZoom 10s ease-in-out infinite alternate;
+  transform: scale(1.08);
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1.08);
+  }
+
+  to {
+    transform: scale(1.18);
+  }
+}
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes searchBarUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.search-button {
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background: #b8942f !important;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+.exclusive-image {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.exclusive-image:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+.exclusive-button {
+  transition: all 0.3s ease;
+}
+
+.exclusive-button:hover {
+  background: #b8942f !important;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
 }

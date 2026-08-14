@@ -34,6 +34,7 @@ export default function ExclusiveLiving() {
           }}
         >
           <img
+          className="exclusive-image"
             src="/images/gallery1.jpg"
             alt=""
             style={{
@@ -41,10 +42,12 @@ export default function ExclusiveLiving() {
               height: "240px",
               objectFit: "cover",
               borderRadius: "18px",
+              transition: "transform 0.4s ease",
             }}
           />
 
           <img
+            className="exclusive-image"
             src="/images/gallery2.jpg"
             alt=""
             style={{
@@ -52,10 +55,12 @@ export default function ExclusiveLiving() {
               height: "240px",
               objectFit: "cover",
               borderRadius: "18px",
+              transition: "transform 0.4s ease",
             }}
           />
 
           <img
+            className="exclusive-image"
             src="/images/gallery3.jpg"
             alt=""
             style={{
@@ -63,10 +68,12 @@ export default function ExclusiveLiving() {
               height: "240px",
               objectFit: "cover",
               borderRadius: "18px",
+              transition: "transform 0.4s ease",
             }}
           />
 
           <img
+            className="exclusive-image"
             src="/images/gallery4.jpg"
             alt=""
             style={{
@@ -74,10 +81,12 @@ export default function ExclusiveLiving() {
               height: "240px",
               objectFit: "cover",
               borderRadius: "18px",
+              transition: "transform 0.4s ease",
             }}
           />
 
           <img
+            className="exclusive-image"
             src="/images/gallery5.jpg"
             alt=""
             style={{
@@ -85,10 +94,12 @@ export default function ExclusiveLiving() {
               height: "240px",
               objectFit: "cover",
               borderRadius: "18px",
+              transition: "transform 0.4s ease",
             }}
           />
 
           <img
+            className="exclusive-image"
             src="/images/gallery6.jpg"
             alt=""
             style={{
@@ -96,6 +107,7 @@ export default function ExclusiveLiving() {
               height: "240px",
               objectFit: "cover",
               borderRadius: "18px",
+             transition: "transform 0.4s ease", 
             }}
           />
         </div>
@@ -150,6 +162,7 @@ export default function ExclusiveLiving() {
           </p>
 
           <a
+     className="exclusive-button"     
   href="#properties"
   style={{
     display: "inline-block",

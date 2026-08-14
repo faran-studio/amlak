@@ -35,6 +35,7 @@ export default function Home() {
         }}
       >
         <video
+        className="hero-video"
           autoPlay
           muted
           loop
@@ -79,6 +80,7 @@ export default function Home() {
               fontSize: "12px",
               letterSpacing: "4px",
               marginBottom: "12px",
+              animation: "heroFadeUp 1s ease-out both",
             }}
           >
             {t.videoHero.brand}
@@ -91,6 +93,7 @@ export default function Home() {
               fontWeight: "300",
               marginBottom: "18px",
               fontFamily: "Georgia, serif",
+              animation: "heroFadeUp 1s ease-out 0.2s both",
             }}
           >
             {t.videoHero.title}
@@ -110,6 +113,7 @@ export default function Home() {
               color: "rgba(255,255,255,.9)",
               fontSize: "18px",
               fontWeight: "300",
+              animation: "heroFadeUp 1s ease-out 0.4s both",
             }}
           >
             {t.videoHero.description}
@@ -126,6 +130,7 @@ export default function Home() {
             width: "85%",
             maxWidth: "1100px",
             zIndex: 5,
+            animation: "searchBarUp 1s ease-out 0.6s both",
           }}
         >
           <div
@@ -163,6 +168,7 @@ export default function Home() {
             />
 
             <a
+      className="search-button"      
   href="/properties"
   style={{
     background: "#d4af37",
