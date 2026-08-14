@@ -9,36 +9,52 @@ export default function About() {
   return (
     <section
       style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "50px",
-        flexWrap: "wrap",
-        marginBottom: "120px",
+        width: "100%",
+        maxWidth: "1100px",
+        margin: "0 auto 120px",
+        padding: "0 20px",
+        boxSizing: "border-box",
       }}
     >
-      <div style={{ flex: "1", minWidth: "320px" }}>
+      {/* Image */}
+      <div
+        style={{
+          width: "100%",
+          marginBottom: "60px",
+        }}
+      >
         <img
           src="/images/about-us.jpg"
           alt={t.about.imageAlt}
           style={{
-            width: "92%",
-            marginLeft: "20px",
-            marginRight: "20px",
+            display: "block",
+            width: "100%",
+            maxWidth: "900px",
+            height: "auto",
+            maxHeight: "550px",
+            objectFit: "cover",
+            margin: "0 auto",
             borderRadius: "24px",
             boxShadow: "0 15px 40px rgba(0,0,0,0.15)",
-            maxHeight: "550px",
           }}
         />
       </div>
 
-      <div style={{ flex: "1", minWidth: "320px" }}>
+      {/* Text */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "900px",
+          margin: "0 auto",
+          boxSizing: "border-box",
+        }}
+      >
         <p
           style={{
             letterSpacing: "4px",
-            color: "#d4af37",
+            color: "#b08a3c",
             fontSize: "13px",
-            marginBottom: "15px",
-            paddingLeft: "-10px",
+            margin: "0 0 18px",
           }}
         >
           {t.about.label}
@@ -46,11 +62,11 @@ export default function About() {
 
         <h2
           style={{
-            fontSize: "44px",
+            fontSize: "clamp(36px, 8vw, 58px)",
             fontWeight: "300",
             color: "#1f2937",
-            lineHeight: "1.3",
-            marginBottom: "25px",
+            lineHeight: "1.18",
+            margin: "0 0 30px",
             fontFamily: "Georgia, serif",
           }}
         >
@@ -61,42 +77,44 @@ export default function About() {
 
         <div
           style={{
-            width: "100px",
+            width: "85px",
             height: "2px",
             background: "#d4af37",
-            marginBottom: "25px",
-            marginLeft: "20px",
-            transform: "translatex(-320px)",
+            margin: "0 auto 35px",
           }}
         />
 
-        <p
+        <div
           style={{
-            lineHeight: "2.1",
+            width: "100%",
             color: "#555",
-            fontSize: "17px",
-            marginRight: "-20px",
-            paddingRight: "15px",
-            transform: "translatex(15px)",
+            fontSize: "clamp(16px, 2vw, 18px)",
+            lineHeight: "2",
+            boxSizing: "border-box",
           }}
         >
-          {t.about.paragraph1}
+          <p style={{ margin: "0 0 28px" }}>
+            {t.about.paragraph1}
+          </p>
 
-          <br />
-          <br />
+          <p style={{ margin: "0 0 28px" }}>
+            {t.about.paragraph2}
+          </p>
 
-          {t.about.paragraph2}
+          <p style={{ margin: "0 0 28px" }}>
+            {t.about.paragraph3}
+          </p>
 
-          <br />
-          <br />
-
-          {t.about.paragraph3}
-
-          <br />
-          <br />
-
-          <strong>{t.about.highlight}</strong>
-        </p>
+          <p
+            style={{
+              margin: 0,
+              color: "#b08a3c",
+              fontWeight: "600",
+            }}
+          >
+            {t.about.highlight}
+          </p>
+        </div>
       </div>
     </section>
   );

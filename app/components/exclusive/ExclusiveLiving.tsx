@@ -8,6 +8,7 @@ export default function ExclusiveLiving() {
 
   return (
     <section
+    className="exclusive-section"
       style={{
         maxWidth: "1400px",
         margin: "120px auto",
@@ -18,18 +19,21 @@ export default function ExclusiveLiving() {
       }}
     >
       <div
+      className="exclusive-layout"
         style={{
           display: "grid",
           gridTemplateColumns: "1.3fr 1fr",
           gap: "60px",
           alignItems: "center",
         }}
-      >
+        >
+        
+      
         {/* گالری تصاویر */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
+            gridTemplateColumns: "1fr 1fr",
             gap: "18px",
           }}
         >
@@ -39,7 +43,7 @@ export default function ExclusiveLiving() {
             alt=""
             style={{
               width: "100%",
-              height: "240px",
+              height: "180px",
               objectFit: "cover",
               borderRadius: "18px",
               transition: "transform 0.4s ease",
@@ -52,7 +56,7 @@ export default function ExclusiveLiving() {
             alt=""
             style={{
               width: "100%",
-              height: "240px",
+              height: "180px",
               objectFit: "cover",
               borderRadius: "18px",
               transition: "transform 0.4s ease",
@@ -65,7 +69,7 @@ export default function ExclusiveLiving() {
             alt=""
             style={{
               width: "100%",
-              height: "240px",
+              height: "180px",
               objectFit: "cover",
               borderRadius: "18px",
               transition: "transform 0.4s ease",
@@ -78,7 +82,7 @@ export default function ExclusiveLiving() {
             alt=""
             style={{
               width: "100%",
-              height: "240px",
+              height: "180px",
               objectFit: "cover",
               borderRadius: "18px",
               transition: "transform 0.4s ease",
@@ -91,7 +95,7 @@ export default function ExclusiveLiving() {
             alt=""
             style={{
               width: "100%",
-              height: "240px",
+              height: "180px",
               objectFit: "cover",
               borderRadius: "18px",
               transition: "transform 0.4s ease",
@@ -104,7 +108,7 @@ export default function ExclusiveLiving() {
             alt=""
             style={{
               width: "100%",
-              height: "240px",
+              height: "180px",
               objectFit: "cover",
               borderRadius: "18px",
              transition: "transform 0.4s ease", 
@@ -115,6 +119,7 @@ export default function ExclusiveLiving() {
         {/* متن */}
         <div>
           <div
+          className="exclusive-content"
             style={{
               color: "#d4af37",
               letterSpacing: "3px",
@@ -128,7 +133,7 @@ export default function ExclusiveLiving() {
 
           <h2
             style={{
-              fontSize: "64px",
+              fontSize: "43px",
               lineHeight: "1.1",
               color: "#111827",
               fontWeight: "300",

@@ -36,7 +36,7 @@ export default function Hero() {
 
         <h2
           style={{
-            fontSize: "58px",
+            fontSize: "40px",
             fontWeight: "300",
             color: "#1f2937",
             fontFamily: "Georgia, serif",

@@ -88,7 +88,7 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: "58px",
+              fontSize: "45px",
               color: "#ffffff",
               fontWeight: "300",
               marginBottom: "18px",
@@ -127,8 +127,8 @@ export default function Home() {
             bottom: "70px",
             left: "50%",
             transform: "translateX(-50%)",
-            width: "85%",
-            maxWidth: "1100px",
+            width: "75%",
+            maxWidth: "900px",
             zIndex: 5,
             animation: "searchBarUp 1s ease-out 0.6s both",
           }}
@@ -140,8 +140,9 @@ export default function Home() {
               overflow: "hidden",
               display: "flex",
               alignItems: "center",
-              minHeight: "64px",
+              minHeight: "44px",
               boxShadow: "0 15px 40px rgba(0,0,0,0.25)",
+              direction: "ltr",
             }}
           >
             <input
@@ -150,7 +151,7 @@ export default function Home() {
                 flex: 1,
                 border: "none",
                 outline: "none",
-                padding: "22px 30px",
+                padding: "10px 25px",
                 fontSize: "16px",
               }}
             />
@@ -161,7 +162,7 @@ export default function Home() {
                 flex: 1,
                 border: "none",
                 outline: "none",
-                padding: "22px 30px",
+                padding: "10px 25px",
                 fontSize: "16px",
                 borderRight: "1px solid #ececec",
               }}
@@ -174,12 +175,12 @@ export default function Home() {
     background: "#d4af37",
     color: "#fff",
     border: "none",
-    height: "64px",
+    height: "44px",
     padding: "0 45px",
     fontSize: "16px",
     cursor: "pointer",
     fontWeight: "600",
-    borderRadius: "32px 0 0 32px",
+    borderRadius: "32px",
     margin: 0,
     display: "flex",
     alignItems: "center",

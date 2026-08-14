@@ -85,3 +85,282 @@ body {
   background: #b8942f !important;
   box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
 }
+/* ================================
+   MOBILE NAVIGATION
+   ================================ */
+
+@media (max-width: 600px) {
+  .main-navigation {
+    height: 75px !important;
+    padding: 0 18px !important;
+  }
+
+  .navigation-links {
+    gap: 12px !important;
+    margin-right: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .navigation-links a {
+    letter-spacing: 0.5px !important;
+    font-size: 12px !important;
+  }
+
+  .navigation-links button {
+    font-size: 14px !important;
+  }
+
+  .main-navigation > a span:first-child {
+    font-size: 26px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .main-navigation > a span:last-child {
+    font-size: 8px !important;
+    letter-spacing: 2px !important;
+  }
+}
+/* ================================
+   NOOR NAVIGATION
+   Responsive Navigation
+================================ */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 90px;
+  padding: 0 80px;
+
+  background: transparent;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+}
+
+/* Logo */
+
+.navigation-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 1;
+  white-space: nowrap;
+
+  text-decoration: none;
+}
+
+.navigation-logo-main {
+  font-size: 34px;
+  letter-spacing: 5px;
+  font-weight: 300;
+
+  color: #ffffff;
+
+  font-family: serif;
+}
+
+.navigation-logo-sub {
+  font-size: 11px;
+  letter-spacing: 4px;
+
+  color: #d4af37;
+
+  margin-top: 6px;
+}
+
+/* Desktop links */
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+  margin-right: 50px;
+
+  font-size: 14px;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #f8fafc;
+
+  letter-spacing: 2px;
+}
+
+.navigation-language {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  color: #f8fafc;
+
+  padding: 0;
+}
+
+/* Mobile controls */
+
+.mobile-controls {
+  display: none;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 5px;
+
+  width: 32px;
+  height: 32px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+
+  width: 25px;
+  height: 2px;
+
+  background: #ffffff;
+
+  transition: all 0.3s ease;
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+  position: absolute;
+
+  top: 90px;
+  left: 20px;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+
+  padding: 28px 25px;
+
+  background: rgba(10, 15, 25, 0.92);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(212, 175, 55, 0.25);
+
+  border-radius: 12px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.mobile-menu a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  letter-spacing: 2px;
+
+  padding: 8px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .navigation {
+    height: 80px;
+
+    padding: 0 22px;
+  }
+
+  .navigation-links {
+    display: none;
+  }
+
+  .mobile-controls {
+    display: flex;
+  }
+
+  .navigation-logo-main {
+    font-size: 29px;
+
+    letter-spacing: 4px;
+  }
+
+  .navigation-logo-sub {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-top: 5px;
+  }
+
+  .mobile-menu {
+    top: 80px;
+  }
+}
+/* Exclusive Living - Responsive Luxury Layout */
+
+.exclusive-section {
+  width: calc(100% - 40px);
+}
+
+.exclusive-content h2 {
+  font-size: clamp(42px, 5vw, 64px);
+}
+
+@media (max-width: 768px) {
+  .exclusive-section {
+    width: calc(100% - 24px);
+    margin: 60px auto !important;
+    padding: 35px 22px !important;
+  }
+
+  .exclusive-layout {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  .exclusive-content {
+    text-align: center;
+  }
+
+  .exclusive-content h2 {
+    font-size: 44px !important;
+    line-height: 1.08 !important;
+  }
+
+  .exclusive-content p {
+    font-size: 16px !important;
+    line-height: 1.9 !important;
+  }
+}

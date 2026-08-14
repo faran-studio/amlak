@@ -168,9 +168,15 @@ export default function Footer() {
             color: "#d1d5db",
           }}
         >
-          <Link href="/" style={{ color: "#d1d5db", textDecoration: "none" }}>
-            {t.footer.home}
-          </Link>
+          <a
+  href="/"
+  style={{
+    color: "#d1d5db",
+    textDecoration: "none",
+  }}
+>
+  {t.footer.home}
+</a>
 
           <Link
             href="/properties"

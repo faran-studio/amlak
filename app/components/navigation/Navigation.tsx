@@ -2,138 +2,107 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 
 export default function Navigation() {
   const { language, setLanguage, t } = useLanguage();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav
+      className="navigation"
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        height: "90px",
-        padding: "0 80px",
-        background: "transparent",
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
         direction: "rtl",
       }}
     >
       {/* Logo */}
       <Link
         href="/"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          lineHeight: "1",
-          whiteSpace: "nowrap",
-          textDecoration: "none",
-        }}
+        className="navigation-logo"
+        onClick={closeMenu}
       >
-        <span
-          style={{
-            fontSize: "34px",
-            letterSpacing: "5px",
-            fontWeight: "300",
-            color: "#ffffff",
-            fontFamily: "serif",
-          }}
-        >
+        <span className="navigation-logo-main">
           NOOR
         </span>
 
-        <span
-          style={{
-            fontSize: "11px",
-            letterSpacing: "4px",
-            color: "#d4af37",
-            marginTop: "6px",
-          }}
-        >
+        <span className="navigation-logo-sub">
           REAL ESTATE
         </span>
       </Link>
 
-      {/* Navigation */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "35px",
-          marginRight: "50px",
-          fontSize: "14px",
-        }}
-      >
+      {/* Desktop Navigation */}
+      <div className="navigation-links">
         {/* Language */}
         <button
           onClick={() => setLanguage(language === "en" ? "fa" : "en")}
-          style={{
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            fontSize: "15px",
-            color: "#f8fafc",
-            padding: 0,
-          }}
+          className="navigation-language"
           aria-label="Change language"
         >
           🌐
         </button>
 
-        {/* Home */}
-        <Link
-          href="/"
-          style={{
-            textDecoration: "none",
-            color: "#f8fafc",
-            letterSpacing: "2px",
-          }}
-        >
+        <Link href="/" className="navigation-link">
           {t.nav.home}
         </Link>
 
-        {/* Properties */}
-        <Link
-          href="/properties"
-          style={{
-            textDecoration: "none",
-            color: "#f8fafc",
-            letterSpacing: "2px",
-          }}
-        >
+        <Link href="/properties" className="navigation-link">
           {t.nav.properties}
         </Link>
 
-        {/* About */}
-        <Link
-          href="/about"
-          style={{
-            textDecoration: "none",
-            color: "#f8fafc",
-            letterSpacing: "2px",
-          }}
-        >
+        <Link href="/about" className="navigation-link">
           {t.nav.about}
         </Link>
 
-        {/* Contact */}
-        <Link
-          href="/contact"
-          style={{
-            textDecoration: "none",
-            color: "#f8fafc",
-            letterSpacing: "2px",
-          }}
-        >
+        <Link href="/contact" className="navigation-link">
           {t.nav.contact}
         </Link>
       </div>
+
+      {/* Mobile Controls */}
+      <div className="mobile-controls">
+        <button
+          onClick={() => setLanguage(language === "en" ? "fa" : "en")}
+          className="navigation-language"
+          aria-label="Change language"
+        >
+          🌐
+        </button>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded={menuOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="mobile-menu">
+          <Link href="/" onClick={closeMenu}>
+            {t.nav.home}
+          </Link>
+
+          <Link href="/properties" onClick={closeMenu}>
+            {t.nav.properties}
+          </Link>
+
+          <Link href="/about" onClick={closeMenu}>
+            {t.nav.about}
+          </Link>
+
+          <Link href="/contact" onClick={closeMenu}>
+            {t.nav.contact}
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }
