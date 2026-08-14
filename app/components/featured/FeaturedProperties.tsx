@@ -5,9 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { properties } from "@/app/data/properties";
 import { useLanguage } from "@/app/context/LanguageContext";
+import { useState } from "react";
 
 export default function FeaturedProperties() {
- const { t, isPersian } = useLanguage(); 
+  const { t } = useLanguage();
+const [hoveredId, setHoveredId] = useState<string | number | null>(null);
   return (
  <div
  id="properties"
@@ -72,13 +74,24 @@ export default function FeaturedProperties() {
           >
             {properties.map((property, index) => (
               <div
-              key={property.id}  
-                style={{
-                  borderRadius: "24px",
-                  overflow: "hidden",
-                  textAlign: "center",
-                }}
-              >
+  key={property.id}
+  onMouseEnter={() => setHoveredId(property.id)}
+  onMouseLeave={() => setHoveredId(null)}
+  style={{
+    borderRadius: "24px",
+    overflow: "hidden",
+    textAlign: "center",
+    transform:
+      hoveredId === property.id
+        ? "translateY(-6px)"
+        : "translateY(0)",
+    boxShadow:
+      hoveredId === property.id
+        ? "0 18px 40px rgba(0,0,0,0.12)"
+        : "0 8px 20px rgba(0,0,0,0.04)",
+    transition: "transform 0.4s ease, box-shadow 0.4s ease",
+  }}
+>
                 <Image
                   src={property.image}
                   alt={property.title}
@@ -89,6 +102,11 @@ export default function FeaturedProperties() {
                     height: "300px",
                     objectFit: "cover",
                     borderRadius: "18px",
+                    transform:
+  hoveredId === property.id
+    ? "scale(1.04)"
+    : "scale(1)",
+transition: "transform 0.6s ease",
                   }}
                 />
 
