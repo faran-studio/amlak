@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
- inline {
+inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -24,7 +24,7 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
- Get-Content app\globals.css -Encoding UTF8
+ 
 .hero-video {
   animation: heroZoom 10s ease-in-out infinite alternate;
   transform: scale(1.08);
@@ -362,5 +362,32 @@ body {
   .exclusive-content p {
     font-size: 16px !important;
     line-height: 1.9 !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero-search input {
+    display: none !important;
+  }
+
+  .hero-search .search-button {
+    width: 52px !important;
+    height: 52px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    font-size: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-search .search-button::after {
+    content: "⌕";
+    font-size: 25px;
+  }
+
+  .hero-search > div {
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    min-height: 52px !important;
+    justify-content: center !important;
   }
 }

@@ -122,6 +122,7 @@ export default function Home() {
 
 
         <div
+        className="hero-search"
           style={{
             position: "absolute",
             bottom: "70px",
@@ -206,6 +207,7 @@ export default function Home() {
     </main>
   )
 }
+
 
 
 
