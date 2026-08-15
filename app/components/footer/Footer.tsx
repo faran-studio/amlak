@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useLanguage } from "../../context/LanguageContext";
 
 const contactInfo = {
-  phone: "+989121234567",
-  email: "info@noor-realestate.com",
-  whatsapp: "989121234567",
-  instagram: "https://instagram.com/",
-  telegram: "https://t.me/",
-  maps: "https://maps.google.com/",
+  phone: "+989192509646",
+  email: "faranstudio.office@gmail.com",
+  whatsapp: "+989196036791",
+  instagram: "https://instagram.com/noor.herbal.co/",
+  telegram: "https://t.me/Teaherbalco",
+  maps: "https://www.google.com/maps/search/?api=1&query=Namk+Abroud%2C+Mazandaran%2C+Iran",
 };
 
 export default function Footer() {
@@ -80,12 +80,17 @@ export default function Footer() {
           marginBottom: "35px",
         }}
       >
-        <a
-          href={`tel:${contactInfo.phone}`}
-          style={{ color: "#fff", textDecoration: "none" }}
-        >
-          📞 +98 912 123 4567
-        </a>
+       <a
+  href={`tel:${contactInfo.phone}`}
+  style={{
+    color: "#fff",
+    textDecoration: "none",
+    direction: "ltr",
+    marginRight: "25px",
+  }}
+>
+  📞 +98 9192509646
+</a>
 
         <a
           href={`mailto:${contactInfo.email}`}
